@@ -1,0 +1,29 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, generated with go test -c
+*.test
+
+# Output of the go coverage tool, specifically when used with -o
+*.out
+
+# Environment variables file
+.env
+
+# Go module cache (usually in GOPATH/pkg/mod)
+# This is generally ignored as it's a local cache.
+# If you have a 'vendor' directory, uncomment the next line.
+# vendor/
+
+# VS Code specific files
+.vscode/
+
+# Other common build artifacts and temporary files
+# Directories created by `go build` or `go install`
+bin/
+pkg/
+_obj/
+_test/
