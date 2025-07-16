@@ -4,15 +4,15 @@ This project provides a Go application to interact with the CrowdStrike Real-tim
 
 ## **Table of Contents**
 
-- [Features](https://www.google.com/search?q=%23features)
-- [Prerequisites](https://www.google.com/search?q=%23prerequisites)
-- [Project Structure](https://www.google.com/search?q=%23project-structure)
-- [Setup](https://www.google.com/search?q=%23setup)
-  - [Environment Variables (.env)](https://www.google.com/search?q=%23environment-variables-env)
-- [Installation](https://www.google.com/search?q=%23installation)
-- [Usage](https://www.google.com/search?q=%23usage)
-- [Error Handling](https://www.google.com/search?q=%23error-handling)
-- [Important Notes](https://www.google.com/search?q=%23important-notes)
+- Features
+- Prerequisites
+- Project Structure
+- Setup
+  - Environment Variables (.env)
+- Installation
+- Usage
+- Error Handling
+- Important Notes
 
 ## **Features**
 
@@ -32,12 +32,14 @@ Before running this application, ensure you have:
   - CLIENT_ID
   - CLIENT_SECRET
   - These can be generated in the CrowdStrike Falcon console under **Support & Resources > API Clients and Keys**. Ensure the API client has the necessary permissions for Real-time Response (e.g., Real-time Response -> Read and Write).
+  - Click [here](https://falcon.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis) to check official documentation for more information.
 - **CrowdStrike Device ID (AID):** The Host ID of the endpoint you wish to target with RTR commands. This can be found in the Falcon console under **Host management**.
 
 ## **Project Structure**
 
 The project is organized as follows:
 
+```
 crowdstrike-data-collector/
 ├── .env # Environment variables (CLIENT_ID, CLIENT_SECRET, DEVICE_ID)
 ├── .gitignore # Specifies files/directories to ignore in Git
@@ -46,6 +48,7 @@ crowdstrike-data-collector/
 ├── main.go # Main application entry point
 └── api/ # Package for CrowdStrike RTR client logic
 ├── api.go # Implements the CrowdStrikeRTRClient and API interaction methods (Manager Class)
+```
 
 ## **Setup**
 
